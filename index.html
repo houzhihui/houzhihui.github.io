@@ -1,61 +1,30 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example</title> 
-<style>
- 
-        table {
-            border-collapse: collapse;
-            width: 80%; 
-			margin: auto;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
- 
-    </style>	
+    <title>My CV - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Fetching Inovies</h1>
-	<table >
-        <thead>
-            <tr>
-                <th>Trans #</th>
-                <th>Type</th>
-                <th>Date</th>
-                <th>Num</th>
-                <th>Name</th>
-                <th>Amount</th>
-            </tr>
-        </thead>
-        <tbody id="invoiceTableBody"></tbody>
-    </table> 
- 
-<script src="data.js"></script>
-  
- <script> 
- // Create table rows dynamically
-        const tableBody = document.getElementById("invoiceTableBody");
-        invoices.forEach(invoice => {
-            const row = document.createElement("tr");
-            row.innerHTML = `
-                <td>${invoice["Trans #"]}</td>
-                <td>${invoice["Type"]}</td>
-                <td>${invoice["Date"]}</td>
-                <td>${invoice["Num"]}</td>
-                <td>${invoice["Name"]}</td>
-                <td>${invoice["Amount"]}</td>
-            `;
-            tableBody.appendChild(row);
-        });
- </script>  
-  
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Philip Hou</h1>
+        <h2>Accounts Payable & General Accounting</h2>
+        <p>Hello! I’m Philip, an experienced accounting professional specializing in accounts payable automation, month-end reporting, and database design. I love building efficient workflows and streamlining finance operations.</p>
+    </main>
+
+    <footer>
+        &copy; 2025 Philip Hou
+    </footer>
 </body>
 </html>
+
+
