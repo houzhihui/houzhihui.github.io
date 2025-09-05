@@ -113,6 +113,8 @@ nav a:hover {
   }
   .carousel-slide img {
     width: 100%;
+    height: auto;
+    max-height: 400px;
     display: block;
   }
   .carousel button {
